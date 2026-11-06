@@ -1,1 +1,125 @@
 
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Georgia, serif;
+}
+
+/* CONTENEDOR */
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+/* BARRA SUPERIOR */
+.encabezado {
+    background-color: #d94b68;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+}
+
+.encabezado h1 {
+    font-size: 22px;
+    font-weight: normal;
+    color: black;
+}
+
+/* ICONO HAMBURGUESA */
+.hamburguesa {
+    font-size: 27px;
+    cursor: pointer;
+    color: black;
+}
+
+/* LOGO PEQUEÑO */
+.logo-pequeno {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* NAVBAR */
+nav {
+    background-color: white;
+    border: 3px solid #923cff;
+    min-height: 61px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d94b68;
+}
+
+/* PRESENTACIÓN */
+.presentacion {
+    width: 360px;
+    height: 345px;
+    background-color: #f9f6e7;
+    border-radius: 110px 110px 0 0;
+
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LOGO PRINCIPAL */
+.logo-principal {
+    width: 230px;
+    height: 230px;
+    object-fit: contain;
+}
+
+/* DISEÑO PARA CELULARES */
+@media (max-width: 600px) {
+
+    .contenedor {
+        width: 95%;
+    }
+
+    .encabezado h1 {
+        font-size: 18px;
+    }
+
+    nav {
+        gap: 0;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .presentacion {
+        width: 90%;
+        height: 300px;
+    }
+
+    .logo-principal {
+        width: 200px;
+        height: 200px;
+    }
+}
+
