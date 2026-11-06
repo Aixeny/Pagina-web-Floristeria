@@ -123,3 +123,178 @@ nav a:hover {
     }
 }
 
+
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap");
+ 
+:root {
+  --color-verde: #4ED996;
+  --color-boton: #91A800;
+  --color-boton-borde: #738600;
+}
+ 
+/Cuerpo (zona verde)
+.contenido {
+  width: 87%;
+  margin: 0 auto;
+  background-color: var(--color-verde);
+  padding: 24px 18px 20px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  color: #000000;
+}
+ 
+.tiendas {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+ 
+.tiendas__mapa {
+  width: 142px;
+  height: 142px;
+  object-fit: cover;
+}
+ 
+.tiendas__texto {
+  font-size: 20px;
+  line-height: 1.3;
+}
+ 
+.catalogo__titulo {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+ 
+.producto {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 26px;
+  padding-left: 18px;
+}
+ 
+.producto__img {
+  width: 107px;
+  height: 107px;
+  flex-shrink: 0;
+  background-color: #FFFFFF;
+}
+ 
+.producto__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
+.producto__info {
+  flex: 1;
+  text-align: center;
+}
+ 
+.producto__info h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+ 
+.producto__info p {
+  font-size: 14px;
+}
+ 
+.comprar-contenedor {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+ 
+.btn-comprar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--color-boton);
+  border: 1px solid var(--color-boton-borde);
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 13px;
+  color: #000000;
+  cursor: pointer;
+}
+ 
+.btn-comprar:hover {
+  background-color: var(--color-boton-borde);
+  color: #FFFFFF;
+}
+ 
+@media (max-width: 600px) {
+  .contenido {
+    width: 95%;
+  }
+ 
+  .tiendas__mapa {
+    width: 110px;
+    height: 110px;
+  }
+ 
+  .tiendas__texto {
+    font-size: 17px;
+  }
+ 
+  .producto {
+    padding-left: 0;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 900px) {
+  .catalogo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+  }
+
+  .catalogo__titulo {
+    grid-column: 1 / -1;
+  }
+
+  .producto {
+    padding-left: 0;
+  }
+
+  .tiendas__mapa {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.contenido,
+.contenido * {
+  box-sizing: border-box;
+}
+
+.contenido img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contenido {
+  max-width: 1000px;
+}
+
+.producto {
+  justify-content: center;
+}
+
+.producto__info {
+  flex: 0 1 220px;
+  text-align: center;
+}
+
+.presentacion img {
+  max-width: 80%;
+  height: auto;
+}
+
